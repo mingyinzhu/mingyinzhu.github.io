@@ -176,3 +176,29 @@ body {
     text-align: center;
   }
 }
+
+/* Bio wrapper: side-by-side on desktop, stacked on mobile */
+.bio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Constrain the photo */
+.bio-photo img {
+  display: block;
+  width: 100%;
+  max-width: 200px;   /* change this up or down as you like */
+  height: auto;
+  border-radius: 50%; /* makes it a circle if it’s square */
+  object-fit: cover;  /* crop nicely if the aspect ratio varies */
+}
+
+/* On very small screens, stack */
+@media (max-width: 500px) {
+  .bio-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
