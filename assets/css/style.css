@@ -162,6 +162,25 @@ body {
   text-decoration: underline;
 }
 
+/* Make the footer stick to the bottom of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main.content {
+  flex: 1 0 auto; /* grow and shrink, initial height auto */
+}
+
+.site-footer {
+  flex-shrink: 0;
+}
+
 /* — Responsive Tweaks — */
 @media (max-width: 600px) {
   .hero h1 {
