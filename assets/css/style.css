@@ -188,11 +188,11 @@ body {
 /* Constrain the photo */
 .bio-photo img {
   display: block;
-  width: 100%;
-  max-width: 200px;   /* change this up or down as you like */
+  width: 20%;
+  max-width: 200px;
   height: auto;
-  border-radius: 50%; /* makes it a circle if it’s square */
-  object-fit: cover;  /* crop nicely if the aspect ratio varies */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* On very small screens, stack */
