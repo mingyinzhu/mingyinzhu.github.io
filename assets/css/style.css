@@ -211,7 +211,7 @@ main.content {
   width: 100%;
   max-width: 250px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 80%;
   object-fit: cover;
 }
 
