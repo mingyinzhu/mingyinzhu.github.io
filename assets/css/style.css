@@ -200,19 +200,26 @@ main.content {
 /* Bio wrapper: side-by-side on desktop, stacked on mobile */
 .bio-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start; 
   gap: 1.5rem;
 }
 
-/* Constrain the photo */
+/* Photo container: fixed size */
+.bio-photo {
+  flex: 0 0 250px;        
+}
+
 .bio-photo img {
   display: block;
-  width: 100%;
-  max-width: 250px;
+  width: 100%;            
   height: auto;
-  border-radius: 50% / 10px;
+  border-radius: 50%/ 10px;      
   object-fit: cover;
+}
+
+/* Text container: take remaining space */
+.bio-text {
+  flex: 1;                 
 }
 
 /* On very small screens, stack */
