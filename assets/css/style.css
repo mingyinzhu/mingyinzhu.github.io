@@ -174,7 +174,8 @@ body {
 }
 
 main.content {
-  flex: 1 0 auto; /* grow and shrink, initial height auto */
+  flex: 1 0 auto;
+  min-height: 0;
 }
 
 .site-footer {
