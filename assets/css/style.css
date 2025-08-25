@@ -197,42 +197,45 @@ main.content {
   }
 }
 
+.bio-section {
+  background-color: #e6f0fa; /* light blue background */
+  padding: 4rem 1rem;         /* space around the content */
+  text-align: center;         /* center-align text */
+}
+
 /* Bio wrapper: side-by-side on desktop, stacked on mobile */
 .bio-wrapper {
   display: grid;
-  grid-template-columns: 250px 1fr;  
-  gap: 2rem;                         
-  align-items: center;               
-  max-width: 1000px;                 
-  margin: 2rem auto;                 
+  grid-template-columns: 250px 1fr; /* photo column + text column */
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .bio-photo img {
   width: 100%;
   height: auto;
-  border-radius: 10px;  
+  border-radius: 10px; /* or 50% for circle */
   object-fit: cover;
 }
 
-/* make the text container a card and let it fill the 2nd grid column */
+/* Card styles for bio text */
 .bio-text.card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  flex: none;            
+  flex: none;
 }
 
-/* On small screens, stack them vertically */
+/* On very small screens, stack them vertically */
 @media (max-width: 600px) {
   .bio-wrapper {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     gap: 1.5rem;
-    margin: 1.5rem auto;
   }
 
   .bio-text.card {
