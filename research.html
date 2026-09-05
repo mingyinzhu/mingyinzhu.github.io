@@ -1,224 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta
-    name="description"
-    content="Research by Mingyin Zhu on AI in finance, textual analysis, institutional investors, and investments."
-  >
+    <meta
+      name="description"
+      content="Research by Mingyin Zhu on AI in finance, textual analysis, institutional investors, and investments."
+    >
 
-  <title>Research | Mingyin Zhu</title>
+    <title>Research · Mingyin Zhu</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
 
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="site-name" href="index.html">Mingyin Zhu</a>
+  <body>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="wordmark" href="index.html">Mingyin Zhu</a>
 
-      <nav aria-label="Main navigation">
-        <a href="index.html#about">About</a>
-        <a class="active" aria-current="page" href="research.html">
-          Research
-        </a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html">CV</a>
-      </nav>
-    </div>
-  </header>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
 
-  <main class="container">
-    <header class="page-header">
-      <h1>Research</h1>
+            <li>
+              <a
+                class="active"
+                aria-current="page"
+                href="research.html"
+              >
+                Research
+              </a>
+            </li>
 
-      <p>
-        My research interests include AI in finance, textual analysis,
-        institutional investors, and investments.
-      </p>
+            <li>
+              <a href="cv.html">CV</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section class="section page-content" aria-labelledby="working-papers">
-      <h2 id="working-papers">Working Papers</h2>
+    <main class="page-main">
+      <div class="shell">
+        <p class="eyebrow">Research</p>
 
-      <article class="paper">
-        <h3>
-          What Makes a Star Analyst? Evidence on Industry Expertise from
-          1.2 Million Analyst Reports
-        </h3>
+        <h1 class="page-title">Working Papers</h1>
 
-        <p class="coauthors">
-          with Alejandro Lopez-Lira, Yuehua Tang, and Yuan Wang
+        <p class="page-intro">
+          My research interests include AI in finance, textual analysis,
+          institutional investors, and investments.
         </p>
 
-        <p>
-          We develop novel text-based measures of sell-side analyst industry
-          knowledge and report quality by applying a large language model
-          evaluation pipeline to 1.2 million industry reports from 40 major
-          brokerage houses between 2012 and 2024. Each report is evaluated
-          across 18 dimensions capturing general research quality and specific
-          forms of industry expertise.
-        </p>
+        <article class="research-item">
+          <h2>
+            What Makes a Star Analyst? Evidence on Industry Expertise from
+            1.2 Million Analyst Reports
+          </h2>
 
-        <p>
-          These measures are substantially more predictive of Institutional
-          Investor All-Star status than traditional forecast-accuracy metrics.
-          Analysts with higher knowledge and quality scores also produce more
-          accurate earnings forecasts, and their forecast revisions and
-          recommendation changes elicit stronger market reactions. At the firm
-          level, coverage by more knowledgeable analysts is associated with
-          lower information asymmetry and a lower implied cost of capital.
-        </p>
+          <p class="authors">
+            with Alejandro Lopez-Lira, Yuehua Tang, and Yuan Wang
+          </p>
 
-        <div class="paper-links">
-          <a
-            href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6496619"
-            target="_blank"
-            rel="noopener"
-          >
-            SSRN ↗
-          </a>
+          <p class="abstract">
+            We develop novel text-based measures of sell-side analyst industry
+            knowledge and report quality by applying a large language model
+            evaluation pipeline to 1.2 million industry reports from 40 major
+            brokerage houses between 2012 and 2024. Each report is evaluated
+            across 18 dimensions capturing general research quality and
+            specific forms of industry expertise.
+          </p>
+
+          <p class="abstract">
+            Our measures are substantially more predictive of Institutional
+            Investor All-Star status than traditional forecast-accuracy
+            metrics. Analysts with higher knowledge and quality scores also
+            produce more accurate earnings forecasts, and their forecast
+            revisions and recommendation changes elicit stronger market
+            reactions. At the firm level, coverage by more knowledgeable
+            analysts is associated with lower information asymmetry and a
+            lower implied cost of capital.
+          </p>
+
+          <div class="paper-links">
+            <a
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6496619"
+              target="_blank"
+              rel="noopener"
+            >
+              SSRN ↗
+            </a>
+          </div>
+          <p class="presentations">
+            <strong>Presented at:</strong>
+            2026 FMA Annual Meeting,
+            2026 NFA Annual Meeting.
+          </p>
+        </article>
+
+        <article class="research-item">
+          <h2>
+            The Memorization Problem: Can We Trust LLMs’ Economic Forecasts?
+          </h2>
+
+          <p class="authors">
+            with Alejandro Lopez-Lira and Yuehua Tang
+          </p>
+
+          <p class="abstract">
+            Large language models cannot be trusted for economic forecasts
+            during periods covered by their training data. Under black-box
+            access, counterfactual forecasting ability is not identified when
+            a model has already seen the realized values: any observed output
+            is consistent with both genuine forecasting skill and memorization.
+          </p>
+
+          <p class="abstract">
+            We show that LLMs have memorized economic and financial data,
+            including exact values from before their knowledge cutoffs.
+            Instructions to respect historical information boundaries do not
+            prevent recall-level accuracy, while masking fails because models
+            can reconstruct entities and dates from limited contextual
+            information. We observe no comparable recall after the models’
+            knowledge cutoffs. Memorization also extends to embeddings.
+          </p>
+
+          <div class="paper-links">
+            <a
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5217505"
+              target="_blank"
+              rel="noopener"
+            >
+              SSRN ↗
+            </a>
+          </div>
+
+          <p class="presentations">
+            <strong>Presented at:</strong>
+            2026 EFA Annual Meeting,
+            2026 Wolfe Research 8th Annual AI in Finance Conference,
+            2026 AFA Meeting,
+            2025 GSU–MS AI &amp; FinTech Conference,
+            2025 Journal of Accounting, Auditing and Finance Symposium,
+            Applied Machine Learning, Economics, and Data Science Webinar.
+          </p>
+        </article>
+
+        <article class="research-item">
+          <h2>Reaching for Synthetic Yield</h2>
+
+          <p class="authors">
+            with Wei Jiang, Yuehua Tang, and Yanbin Wu
+          </p>
+
+          <p class="abstract">
+            We examine “reaching for synthetic yield” through covered-call
+            option writing by investment companies. Using return and holdings
+            data, including short positions, from a comprehensive sample of
+            U.S. options-writing funds, we find that funds become more
+            aggressive in synthesizing income when interest rates, term
+            premiums, and default premiums are low.
+          </p>
+
+          <p class="abstract">
+            Investors reward high-yield funds with inflows, conditional on
+            total performance, without fully distinguishing between
+            asset-generated yield and yield manufactured through option
+            writing. However, yield-manufacturing funds experience greater
+            total-return losses, particularly during bull markets. Their
+            aggregate option-writing activity also suppresses option prices
+            and short-term implied volatility.
+          </p>
+
+          <div class="paper-links">
+            <a
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6629498"
+              target="_blank"
+              rel="noopener"
+            >
+              SSRN ↗
+            </a>
+          </div>
+
+          <p class="presentations">
+            <strong>Presented at:</strong>
+            2026 ICI Summer Research Workshop,
+            2025 FMA Meeting,
+            2023 University of Florida Warrington Seminar.
+          </p>
+        </article>
+
+        <article class="research-item">
+          <h2>Technology Adoption in Mutual Funds</h2>
+
+          <p class="authors">
+            with Beatrice Chang
+          </p>
+
+          <p class="abstract">
+            We study technology adoption by mutual fund families using the
+            hiring of employees in data- and engineering-related roles. Fund
+            families with larger average fund sizes are more likely to hire
+            for these positions, suggesting that scale facilitates investments
+            in technology.
+          </p>
+
+          <p class="abstract">
+            Families that hire data and engineering employees subsequently
+            have lower expense ratios, are more likely to launch new funds,
+            and experience higher overall flows. Textual analysis of job
+            descriptions and responsibilities supports the interpretation that
+            these positions contribute to cost reduction, product development,
+            and investor acquisition.
+          </p>
+
+          <p class="presentations">
+            <strong>Presented at:</strong>
+            2024 University of Florida Warrington Seminar.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <p class="footer-name">Mingyin Zhu</p>
+
+          <p class="footer-role">
+            Finance PhD Candidate · University of Florida
+          </p>
         </div>
-        <p class="presentations">
-          <strong>Presented at:</strong>
-          2026 FMA Annual Meeting, 
-          2026 NFA Annual Meeting
-        </p>
-      </article>
 
-      <article class="paper">
-        <h3>
-          The Memorization Problem: Can We Trust LLMs’ Economic Forecasts?
-        </h3>
+        <div>
+          <div class="footer-links">
+            <a href="mailto:mingyin.zhu@warrington.ufl.edu">
+              Email
+            </a>
 
-        <p class="coauthors">
-          with Alejandro Lopez-Lira and Yuehua Tang
-        </p>
+            <a href="assets/files/Mingyin%20Zhu%20CV%203.pdf">
+              CV
+            </a>
 
-        <p>
-          Large language models cannot be trusted for economic forecasts
-          during periods covered by their training data. Under black-box
-          access, counterfactual forecasting ability is not identified when a
-          model has already seen the realized values: any observed output is
-          consistent with both genuine forecasting skill and memorization.
-        </p>
+            <a
+              href="https://www.linkedin.com/in/mingyin-zhu/"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+          </div>
 
-        <p>
-          We show that LLMs have memorized economic and financial data,
-          including exact values from before their knowledge cutoffs.
-          Instructions to respect historical information boundaries do not
-          prevent recall-level accuracy, while masking fails because models can
-          reconstruct entities and dates from limited contextual information.
-          We observe no comparable recall after the models’ knowledge cutoffs.
-          Memorization also extends to embeddings.
-        </p>
-
-        <div class="paper-links">
-          <a
-            href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5217505"
-            target="_blank"
-            rel="noopener"
-          >
-            SSRN ↗
-          </a>
+          <p class="copyright">© 2026 Mingyin Zhu</p>
         </div>
-
-        <p class="presentations">
-          <strong>Presented at:</strong>
-          2026 EFA Annual Meeting, 
-          2026 Wolfe Research 8th Annual AI in Finance Conference,
-          2026 AFA Annual Meeting,
-          2025 GSU–MS AI &amp; FinTech Conference,
-          2025 Journal of Accounting, Auditing and Finance Symposium,
-          Applied Machine Learning, Economics, and Data Science Webinar
-        </p>
-      </article>
-
-      <article class="paper">
-        <h3>Reaching for Synthetic Yield</h3>
-
-        <p class="coauthors">
-          with Wei Jiang, Yuehua Tang, and Yanbin Wu
-        </p>
-
-        <p>
-          We examine “reaching for synthetic yield” through covered-call
-          option writing by investment companies. Using return and holdings
-          data, including short positions, from a comprehensive sample of U.S.
-          options-writing funds, we find that funds become more aggressive in
-          synthesizing income when interest rates, term premiums, and default
-          premiums are low.
-        </p>
-
-        <p>
-          Investors reward high-yield funds with inflows, conditional on total
-          performance, without fully distinguishing between asset-generated
-          yield and yield manufactured through option writing. However,
-          yield-manufacturing funds experience greater total-return losses,
-          particularly during bull markets. Their aggregate option-writing
-          activity also suppresses option prices and short-term implied
-          volatility.
-        </p>
-
-        <div class="paper-links">
-          <a
-            href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6629498"
-            target="_blank"
-            rel="noopener"
-          >
-            SSRN ↗
-          </a>
-        </div>
-
-        <p class="presentations">
-          <strong>Presented at:</strong>
-          2026 ICI Summer Research Workshop, 2025 FMA Meeting,
-          2023 University of Florida Warrington Seminar.
-        </p>
-      </article>
-
-      <article class="paper">
-        <h3>Technology Adoption in Mutual Funds</h3>
-
-        <p class="coauthors">
-          with Beatrice Chang
-        </p>
-
-        <p>
-          We study technology adoption by mutual fund families using the
-          hiring of employees in data- and engineering-related roles. Fund
-          families with larger average fund sizes are more likely to hire for
-          these positions, suggesting that scale facilitates investments in
-          technology.
-        </p>
-
-        <p>
-          Families that hire data and engineering employees subsequently have
-          lower expense ratios, are more likely to launch new funds, and
-          experience higher overall flows. Textual analysis of job
-          descriptions and responsibilities supports the interpretation that
-          these positions contribute to cost reduction, product development,
-          and investor acquisition.
-        </p>
-
-        <p class="presentations">
-          <strong>Presented at:</strong>
-          2024 University of Florida Warrington Seminar.
-        </p>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© 2026 Mingyin Zhu</span>
-
-      <a href="mailto:mingyin.zhu@warrington.ufl.edu">
-        mingyin.zhu@warrington.ufl.edu
-      </a>
-    </div>
-  </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
