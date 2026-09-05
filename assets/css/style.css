@@ -1,10 +1,12 @@
 :root {
   --ink: #172033;
   --muted: #5d6675;
-  --accent: #9f2d36;
-  --dark: #74202a;
-  --line: #d9dde4;
-  --soft: #f5f6f8;
+
+  --accent: #c13c78;
+  --dark: #922653;
+
+  --line: #ead9e1;
+  --soft: #fff5f9;
   --paper: #ffffff;
   --max: 1080px;
 }
@@ -52,7 +54,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid rgba(159, 45, 54, 0.25);
+  outline: 3px solid rgba(193, 60, 120, 0.25);
   outline-offset: 4px;
 }
 
