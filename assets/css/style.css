@@ -10,6 +10,16 @@
   --paper: #ffffff;
 
   --max-width: 1080px;
+
+  --font-sans:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 /* =========================================================
@@ -35,14 +45,7 @@ body {
   color: var(--ink);
   background: var(--paper);
 
-  font-family:
-    Inter,
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-
+  font-family: var(--font-sans);
   line-height: 1.65;
 
   -webkit-font-smoothing: antialiased;
@@ -58,6 +61,7 @@ img {
 
 a {
   color: var(--accent);
+
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
@@ -74,9 +78,11 @@ a:focus-visible {
 h1,
 h2,
 h3 {
+  margin-top: 0;
+
   color: var(--ink);
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   line-height: 1.2;
 }
 
@@ -111,10 +117,10 @@ h3 {
 .wordmark {
   color: var(--ink);
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.18rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  font-weight: 750;
+  letter-spacing: -0.01em;
   text-decoration: none;
 }
 
@@ -182,15 +188,16 @@ h3 {
 h1 {
   margin: 0;
 
-  font-size: clamp(2.65rem, 6vw, 4.75rem);
-  font-weight: 500;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.65rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
 }
 
 .research-areas {
   margin: 17px 0 0;
 
   color: var(--muted);
+
   font-size: 1.02rem;
 }
 
@@ -210,8 +217,8 @@ h1 {
 
   color: #343c4a;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.12rem;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
   line-height: 1.75;
 }
 
@@ -269,6 +276,7 @@ h1 {
 
 .portrait-wrap {
   position: relative;
+
   margin-top: 10px;
 }
 
@@ -320,9 +328,10 @@ h1 {
 .page-title {
   margin: 0;
 
+  font-family: var(--font-sans);
   font-size: clamp(1.8rem, 4vw, 2.55rem);
-  font-weight: 500;
-  letter-spacing: -0.025em;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
 .section-heading a {
@@ -358,9 +367,10 @@ h1 {
 .paper-title {
   margin: 0 0 5px;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.13rem;
   font-weight: 700;
+  line-height: 1.4;
 }
 
 .paper-meta,
@@ -368,6 +378,7 @@ h1 {
   margin: 0;
 
   color: var(--muted);
+
   font-size: 0.88rem;
 }
 
@@ -393,8 +404,8 @@ h1 {
 
   color: var(--muted);
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.08rem;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
@@ -420,8 +431,10 @@ h1 {
 
   color: var(--ink);
 
-  font-size: 1.45rem;
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   line-height: 1.35;
 }
 
@@ -509,7 +522,9 @@ h1 {
 .teaching-entry h2 {
   margin: 0 0 5px;
 
+  font-family: var(--font-sans);
   font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .teaching-entry p {
@@ -589,7 +604,7 @@ h1 {
 .footer-name {
   margin: 0 0 4px;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.06rem;
   font-weight: 700;
 }
@@ -599,6 +614,7 @@ h1 {
   margin: 0;
 
   color: var(--muted);
+
   font-size: 0.83rem;
 }
 
@@ -630,6 +646,7 @@ h1 {
 
   .site-nav {
     width: 100%;
+
     overflow-x: auto;
   }
 
@@ -657,6 +674,10 @@ h1 {
   .home-main,
   .page-main {
     padding-top: 48px;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 12vw, 3.5rem);
   }
 
   .paper-list li,
